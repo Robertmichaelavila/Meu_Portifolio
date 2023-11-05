@@ -10,10 +10,9 @@ Grandes Telas: acima de 1200px
 */
 
 :root{
-    --cor0:#ffff;
-    --cor1:#0D2840;
-    --cor2:#175073;
-    --cor3:#0000;
+    --cor1: #ffffff;
+    --cor2: #494E5F;
+    --cor3: #FFE7D4;
 }
 
 *{
@@ -21,18 +20,92 @@ Grandes Telas: acima de 1200px
     padding: 0px;
 }
 
-html,body{
-    width: 100vw;
+body,html{
+    width: 100vh;
     height: 100vh;
 }
 
-header{
+main{
+    min-width: 300px;
+    margin: auto;
+    box-shadow: 0px 0px 10px #00000062;
     background-color: var(--cor1);
-    width: 600px;
-    color: var(--cor0);
-    padding-left: 20px;
 }
 
-img{
-    width: 50px;
+section.container-left{
+    width: 600px;
+    background-color: var(--cor2);
+    padding: 20px;
+}
+
+div.titulo{
+    width: 550px;
+    margin: 10px;
+    margin-right: 10px;
+    border-bottom: 2px solid var(--cor3);
+}
+
+div.titulo > h1{
+    color: var(--cor3);
+    margin-bottom: 5px;
+}
+
+div.titulo > img{
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+div.titulo > p{
+    color: var(--cor1);
+    margin-bottom: 20px;
+}
+
+div.perfil-pessoal{
+    margin: 10px;
+}
+
+div.perfil-pessoal > h2{
+    color: var(--cor3);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+div.perfil-pessoal > p{
+    color: var(--cor1);
+    margin-bottom: 20px;
+}
+
+div.perfil-pessoal > h3{
+    color: var(--cor3);
+    margin-bottom: 10px;
+}
+
+div.perfil-pessoal > ul{
+    margin-left: 20px;
+    color: var(--cor1);
+}
+
+div.contato{
+    margin: 10px;
+}
+
+div.contato > h2{
+    color: var(--cor3);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+div.contato > figure{
+    text-align: center;
+}
+
+div.contato > figure > a{
+    margin: 0px 20px;
+}
+
+div.contato > p{
+    text-align: center;
+    color: var(--cor1);
+    margin-top: 20px;
 }
