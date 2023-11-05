@@ -20,29 +20,22 @@ Grandes Telas: acima de 1200px
     padding: 0px;
 }
 
-body,html{
-    width: 100vh;
-    height: 100vh;
-}
-
 main{
     min-width: 300px;
-    margin: auto;
     box-shadow: 0px 0px 10px #00000062;
     background-color: var(--cor1);
 }
 
 section.container-left{
-    width: 600px;
+    min-width: 300px;
     background-color: var(--cor2);
     padding: 20px;
 }
 
 div.titulo{
-    width: 550px;
+    width: 300px;
     margin: 10px;
     margin-right: 10px;
-    border-bottom: 2px solid var(--cor3);
 }
 
 div.titulo > h1{
@@ -57,8 +50,10 @@ div.titulo > img{
 }
 
 div.titulo > p{
-    color: var(--cor1);
-    margin-bottom: 20px;
+    width: 250px;
+    color: var(--cor1);    
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--cor3);
 }
 
 div.perfil-pessoal{
@@ -74,6 +69,7 @@ div.perfil-pessoal > h2{
 div.perfil-pessoal > p{
     color: var(--cor1);
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 div.perfil-pessoal > h3{
