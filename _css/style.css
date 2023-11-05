@@ -1,33 +1,40 @@
 @charset "UTF-8";
-
-/*Typical Device BreackPoints
-_____________________________
-Pequenas Telas: até 600px
-Celular: de 600 até 768px
-Tablet: de 768 até 992px
-Desktop: de 992 até 1200px
-Grandes Telas: acima de 1200px
-*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 
 :root{
     --cor1: #ffffff;
     --cor2: #494E5F;
     --cor3: #FFE7D4;
+    --font: 'Montserrat', sans-serif;
 }
 
 *{
     margin: 0px;
     padding: 0px;
+    font-family: var(--font);
 }
 
+/*Configuração global*/
+p{
+    font-size: 0.8em;
+}
+
+li{
+    font-size: 0.8em;
+}
+
+/*********************/
+
 main{
-    min-width: 300px;
-    box-shadow: 0px 0px 10px #00000062;
+    margin: auto;
+    width: 300px;
+    box-shadow: 1px 1px 3px #00000083;
     background-color: var(--cor1);
 }
 
+/*Inicio da section.container-rigth*/
 section.container-left{
-    min-width: 300px;
+    width: 300px;
     background-color: var(--cor2);
     padding: 20px;
 }
@@ -83,33 +90,6 @@ div.perfil-pessoal > ul{
     color: var(--cor1);
 }
 
-/*Inicio da section.container-rigth*/
-
-section.container-rigth{
-    min-width: 300px;
-    background-color: var(--cor1);
-    padding: 20px;
-}
-
-section.container-rigth > div{
-    margin: 10px;
-}
-
-section.container-rigth > div > h1{
-    padding-left: 20px;
-    margin: 20px 0px;
-    background-color: var(--cor3);
-}
-
-section.container-rigth > div > ul{
-    padding: 10px 0px 20px 20px;
-}
-
-section.container-rigth > div > ul > li{
-    margin: 10px 0px;
-}
-
-/******************************************/
 
 div.contato{
     margin: 10px;
@@ -135,3 +115,32 @@ div.contato > p{
     color: var(--cor1);
     margin-top: 20px;
 }
+
+/*Inicio da section.container-rigth*/
+
+section.container-rigth{
+    min-width: 300px;
+    background-color: #d1d1d1;
+    padding: 20px;
+}
+
+section.container-rigth > div{
+    margin: 10px;
+}
+
+section.container-rigth > div > h1{
+    padding-left: 20px;
+    margin: 20px 0px;
+    color: var(--cor1);
+    background-color: var(--cor2);
+}
+
+section.container-rigth > div > ul{
+    padding: 10px 0px 20px 20px;
+}
+
+section.container-rigth > div > ul > li{
+    margin: 10px 0px;
+}
+
+/******************************************/
